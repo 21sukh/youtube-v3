@@ -26,6 +26,8 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
     event.target.playVideo(); // Auto-play the video when ready
 }
+function onPlayerStateChange(event) {
+}
 function loadYouTubeAPI() {
     const tag = document.createElement('script');
     tag.src = 'https://www.youtube.com/iframe_api';
